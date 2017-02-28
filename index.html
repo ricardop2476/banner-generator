@@ -6,9 +6,12 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>
         $(function(){
-          
+            //when the button 'create my banner' is clicked
             $('button').click(function() {
-              var bannerText = $('userText').html();
+              //sets variable 'bannerText' equal to the value of the user input
+              var bannerText = $('#userText').val();
+              //since the 'p' element is the text that goes into the banner, it is
+              //equal to the variable 'bannerText', which is the user input
               $('p').html(bannerText);
             });
             
@@ -34,7 +37,7 @@
     
     <form>
     <!–text box, with the user input "text"–>
-    Text: <input type="text" name="userText"> <br> <br>
+    Text: <input type="text" id="userText"> <br> <br>
     
     <!–select menu with 3 fonts–>
     Font: <select>
