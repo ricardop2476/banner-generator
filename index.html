@@ -12,15 +12,27 @@
   </head>
   <body>
     
+    <h2>Banner Generator</h2>
+    
     <form>
+    <!–text box, with the user input "text"–>
     Text: <input type="text" name="text"> <br> <br>
     
+    <!–select menu with 3 fonts–>
+    Font: <select>
+      <option value="font1">font1</option>
+      <option value="font2">font2</option>
+      <option value="font3">font3</option>
+    </select> <br> <br>
+    
+    <!–radio menu with four avalible text colors–>
     Text Color: <br>
     <input type="radio" name="textColor" value="red" checked> Red <br>
     <input type="radio" name="textColor" value="blue"> Blue <br>
     <input type="radio" name="textColor" value="green"> Green <br>
     <input type="radio" name="textColor" value="yellow"> Yellow <br> <br>
     
+    <!–radio menu with four avalible background colors–>
     Background Color: <br>
     <input type="radio" name="backgroundColor" value="red" checked> Red <br>
     <input type="radio" name="backgroundColor" value="blue"> Blue <br>
@@ -30,7 +42,10 @@
     <input type="submit" value="Create My Banner">
     </form>
     
-    <h2></h2>
+    <!–user generated banner–>
+    <div id="banner">
+      <p id="text"></p>
+    </div>
     
   </body>
 </html>
