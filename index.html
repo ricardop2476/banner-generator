@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>jQuery Template</title>
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-–Oleo Script-–>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <!-–Bree Serif-–>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!–-Nunito Sans–->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <script>
         $(function(){
             //when the button 'create my banner' is clicked
@@ -13,6 +19,10 @@
               //since the 'p' element is the text that goes into the banner, it is
               //equal to the variable 'bannerText', which is the user input
               $('p').html(bannerText);
+              //sets the 'p' element equal to the font that the user clicked
+              var bannerFont =  $('option').val(); //'Oleo Script'
+              $('p').css('font-family', bannerFont);
+              
             });
             
         });
@@ -28,7 +38,9 @@
         text-align: center;
         font-size: 45px;
         transform: translate(0px,55px);
+        /*font-family:selectFont;*/
       }
+      
     </style>
   </head>
   <body>
@@ -40,10 +52,10 @@
     Text: <input type="text" id="userText"> <br> <br>
     
     <!–select menu with 3 fonts–>
-    Font: <select>
-      <option value="font1">font1</option>
-      <option value="font2">font2</option>
-      <option value="font3">font3</option>
+    Font: <select id="userFont">
+      <option value="Bree Serif">Bree Serif</option>
+      <option value="Oleo Script">Oleo Script</option>
+      <option value="Nunito Sans">Nunito Sans</option>
     </select> <br> <br>
     
     <!–radio menu with four avalible text colors–>
