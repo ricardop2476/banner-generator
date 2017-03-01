@@ -20,7 +20,7 @@
               //equal to the variable 'bannerText', which is the user input
               $('p').html(bannerText);
               //sets the 'p' element equal to the font that the user clicked
-              var bannerFont =  $('option').val(); //'Oleo Script'
+              var bannerFont =  $('option').val(); 
               $('p').css('font-family', bannerFont);
               
             });
@@ -38,7 +38,6 @@
         text-align: center;
         font-size: 45px;
         transform: translate(0px,55px);
-        /*font-family:selectFont;*/
       }
       
     </style>
@@ -48,7 +47,7 @@
     <h2>Banner Generator</h2>
     
     <form>
-    <!–text box, with the user input "text"–>
+    <!–text box, with the user input–>
     Text: <input type="text" id="userText"> <br> <br>
     
     <!–select menu with 3 fonts–>
