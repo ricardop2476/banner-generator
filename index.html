@@ -24,23 +24,28 @@
               var bannerFont = $('#userFont').val();
               // sets the p style/css equal to the variable bannerFont
               $('p').css('font-family', bannerFont);
-              // sets the 'p' element 
+              // sets the 'p' element equal to bannerColor: gets selected value from
+              // radio input (text color)
               var bannerColor = $('input[name=textColor]:checked').val();
+              // change the 'p' element to the selected value
               $('p').css('color', bannerColor);
-              
+              // bannerBackground is equal to the option that the user selcected 
+              // this is the background
               var bannerBackground = $('input[name=backgroundColor]:checked').val();
+              // use id because it is for the background of the div, not relevent
+              // to the 'p' element
               $('#banner').css('background-color', bannerBackground)
             });
         });
     </script>
     <style>
+      /*this is where the user will see the banner*/
       #banner {
         width: 100%;
         height: 250px;
         border-style: solid;
-        
       }
-      
+      /* this specifys the location, size, and stroke of the user text */
       p {
         text-align: center;
         font-size: 45px;
@@ -60,24 +65,24 @@
     <h2>Banner Generator</h2>
     
     <form>
-    <!–text box, with the user input–>
+    <!–-text box, with the user input–->
     Text: <input type="text" id="userText"> <br> <br>
     
-    <!–select menu with 3 fonts–>
+    <!-–select menu with 3 fonts-–>
     Font: <select id="userFont">
       <option value='Bree Serif'>Bree Serif</option>
       <option value='Oleo Script'>Oleo Script</option>
       <option value='Amiko'>Amiko</option>
     </select> <br> <br>
     
-    <!–radio menu with four avalible text colors–>
+    <!–-radio menu with four avalible text colors-–>
     Text Color: <br>
     <input type="radio" id="userColor" name="textColor" value="red" checked> Red <br>
     <input type="radio" id="userColor" name="textColor" value="blue"> Blue <br>
     <input type="radio" id="userColor" name="textColor" value="green"> Green <br>
     <input type="radio" id="userColor" name="textColor" value="yellow"> Yellow <br> <br>
     
-    <!–radio menu with four avalible background colors–>
+    <!–-radio menu with four avalible background colors-–>
     Background Color: <br>
     <input type="radio" id="userBackground" name="backgroundColor" value="red" checked> Red <br>
     <input type="radio" id="userBackground" name="backgroundColor" value="blue"> Blue <br>
@@ -87,7 +92,7 @@
     <button type="button">Create My Banner</button>
     </form> <br>
     
-    <!–user generated banner–>
+    <!–-user generated banner–->
     <div id="banner">
       <p></p>
     </div>
