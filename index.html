@@ -24,9 +24,12 @@
               var bannerFont = $('#userFont').val();
               // sets the p style/css equal to the variable bannerFont
               $('p').css('font-family', bannerFont);
-              // 
+              // sets the 'p' element 
               var bannerColor = $('input[name=textColor]:checked').val();
               $('p').css('color', bannerColor);
+              
+              var bannerBackground = $('input[name=backgroundColor]:checked').val();
+              $('#banner').css('background-color', bannerBackground)
             });
         });
     </script>
@@ -35,12 +38,19 @@
         width: 100%;
         height: 250px;
         border-style: solid;
+        
       }
       
       p {
         text-align: center;
         font-size: 45px;
         transform: translate(0px,55px);
+        /*stroke, so if the user wants red text on red background*/
+        text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
       }
       
     </style>
@@ -69,10 +79,10 @@
     
     <!–radio menu with four avalible background colors–>
     Background Color: <br>
-    <input type="radio" name="backgroundColor" value="red" checked> Red <br>
-    <input type="radio" name="backgroundColor" value="blue"> Blue <br>
-    <input type="radio" name="backgroundColor" value="green"> Green <br>
-    <input type="radio" name="backgroundColor" value="yellow"> Yellow <br> <br>
+    <input type="radio" id="userBackground" name="backgroundColor" value="red" checked> Red <br>
+    <input type="radio" id="userBackground" name="backgroundColor" value="blue"> Blue <br>
+    <input type="radio" id="userBackground" name="backgroundColor" value="green"> Green <br>
+    <input type="radio" id="userBackground" name="backgroundColor" value="yellow"> Yellow <br> <br>
     <!-create banner button->
     <button type="button">Create My Banner</button>
     </form> <br>
