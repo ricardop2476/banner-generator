@@ -24,9 +24,10 @@
               var bannerFont = $('#userFont').val();
               // sets the p style/css equal to the variable bannerFont
               $('p').css('font-family', bannerFont);
-              
+              // 
+              var bannerColor = $('input[name=textColor]:checked').val();
+              $('p').css('color', bannerColor);
             });
-            
         });
     </script>
     <style>
@@ -61,10 +62,10 @@
     
     <!–radio menu with four avalible text colors–>
     Text Color: <br>
-    <input type="radio" name="textColor" value="red" checked> Red <br>
-    <input type="radio" name="textColor" value="blue"> Blue <br>
-    <input type="radio" name="textColor" value="green"> Green <br>
-    <input type="radio" name="textColor" value="yellow"> Yellow <br> <br>
+    <input type="radio" id="userColor" name="textColor" value="red" checked> Red <br>
+    <input type="radio" id="userColor" name="textColor" value="blue"> Blue <br>
+    <input type="radio" id="userColor" name="textColor" value="green"> Green <br>
+    <input type="radio" id="userColor" name="textColor" value="yellow"> Yellow <br> <br>
     
     <!–radio menu with four avalible background colors–>
     Background Color: <br>
