@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <script>
         $(function(){
-            //when the button 'create my banner' is clicked
+            // when the button 'create my banner' is clicked
             $('button').click(function() {
               //sets variable 'bannerText' equal to the value of the user input
               var bannerText = $('#userText').val();
-              //since the 'p' element is the text that goes into the banner, it is
-              //equal to the variable 'bannerText', which is the user input
+              // since the 'p' element is the text that goes into the banner, it
+              // is equal to the variable 'bannerText', which is the user input
               $('p').html(bannerText);
-              //sets the 'p' element equal to the font that the user clicked
-              var bannerFont = $('#userFont').val(); //$('option').val(); 
+              // sets the 'p' element equal to the font that the user clicked
+              // the value of the select menu (id of userFont) is equal to variable
+              var bannerFont = $('#userFont').val();
+              // sets the p style/css equal to the variable bannerFont
               $('p').css('font-family', bannerFont);
               
             });
@@ -54,7 +56,7 @@
     Font: <select id="userFont">
       <option value='Bree Serif'>Bree Serif</option>
       <option value='Oleo Script'>Oleo Script</option>
-      <option value=Nunito Sans'>Nunito Sans</option>
+      <option value='Nunito Sans'>Nunito Sans</option>
     </select> <br> <br>
     
     <!–radio menu with four avalible text colors–>
