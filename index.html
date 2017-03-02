@@ -20,7 +20,7 @@
               //equal to the variable 'bannerText', which is the user input
               $('p').html(bannerText);
               //sets the 'p' element equal to the font that the user clicked
-              var bannerFont =  $('option').val(); 
+              var bannerFont = $('#userFont').val(); //$('option').val(); 
               $('p').css('font-family', bannerFont);
               
             });
@@ -52,9 +52,9 @@
     
     <!–select menu with 3 fonts–>
     Font: <select id="userFont">
-      <option value="Bree Serif">Bree Serif</option>
-      <option value="Oleo Script">Oleo Script</option>
-      <option value="Nunito Sans">Nunito Sans</option>
+      <option value='Bree Serif'>Bree Serif</option>
+      <option value='Oleo Script'>Oleo Script</option>
+      <option value=Nunito Sans'>Nunito Sans</option>
     </select> <br> <br>
     
     <!–radio menu with four avalible text colors–>
