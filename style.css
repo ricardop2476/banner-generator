@@ -1,0 +1,17 @@
+#banner {
+        width: 100%;
+        height: 250px;
+        border-style: solid;
+      }
+      /* this specifys the location, size, and stroke of the user text */
+      p {
+        text-align: center;
+        font-size: 45px;
+        transform: translate(0px,55px);
+        /*stroke, so if the user wants red text on red background*/
+        text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+      }
