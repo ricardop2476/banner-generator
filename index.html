@@ -15,7 +15,7 @@
         $(function(){
             // when the button 'create my banner' is clicked
             $('button').click(function() {
-              //sets variable 'bannerText' equal to the value of the user input
+              // sets variable 'bannerText' equal to the value of the user input
               var bannerText = $('#userText').val();
               // since the 'p' element is the text that goes into the banner, it
               // is equal to the variable 'bannerText', which is the user input
@@ -30,10 +30,10 @@
               var bannerColor = $('input[name=textColor]:checked').val();
               // change the 'p' element to the selected value
               $('p').css('color', bannerColor);
-              // bannerBackground is equal to the option that the user selcected 
+              // bannerBackground is equal to the option that the user selected 
               // this is the background
               var bannerBackground = $('input[name=backgroundColor]:checked').val();
-              // use id because it is for the background of the div, not relevent
+              // use id because it is for the background of the div, not relevant
               // to the 'p' element
               $('#banner').css('background-color', bannerBackground)
             });
@@ -56,14 +56,14 @@
       <option value='Amiko'>Amiko</option>
     </select> <br> <br>
     
-    <!–-radio menu with four avalible text colors-–>
+    <!–-radio menu with four available text colors-–>
     Text Color: <br>
     <input type="radio" id="userColor" name="textColor" value="red" checked> Red <br>
     <input type="radio" id="userColor" name="textColor" value="blue"> Blue <br>
     <input type="radio" id="userColor" name="textColor" value="green"> Green <br>
     <input type="radio" id="userColor" name="textColor" value="yellow"> Yellow <br> <br>
     
-    <!–-radio menu with four avalible background colors-–>
+    <!–-radio menu with four available background colors-–>
     Background Color: <br>
     <input type="radio" id="userBackground" name="backgroundColor" value="red" checked> Red <br>
     <input type="radio" id="userBackground" name="backgroundColor" value="blue"> Blue <br>
